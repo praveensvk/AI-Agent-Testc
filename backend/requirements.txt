@@ -1,0 +1,31 @@
+# FastAPI & Server
+fastapi>=0.115.0,<1.0.0
+uvicorn[standard]>=0.34.0,<1.0.0
+python-multipart>=0.0.18
+websockets>=14.0,<15.0
+
+# Database
+sqlalchemy[asyncio]>=2.0.36,<3.0.0
+asyncpg>=0.30.0,<1.0.0
+alembic>=1.14.0,<2.0.0
+psycopg2-binary>=2.9.0,<3.0.0
+
+# Pydantic
+pydantic>=2.10.0,<3.0.0
+pydantic-settings>=2.7.0,<3.0.0
+
+# LangChain & Agents
+langchain>=0.3.0,<0.4.0
+langchain-ollama>=0.3.0,<0.4.0
+langgraph>=0.2.0,<0.3.0
+
+# Playwright
+playwright>=1.49.0,<2.0.0
+
+# Utilities
+python-dotenv>=1.0.1
+httpx>=0.28.0,<1.0.0
+
+# LLM Providers
+langchain-groq>=0.2.0,<0.3.0
+

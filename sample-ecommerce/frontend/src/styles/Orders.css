@@ -1,0 +1,132 @@
+.orders {
+  animation: fadeIn 0.3s ease-in;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.orders h1 {
+  margin-bottom: 30px;
+}
+
+.no-orders {
+  background: white;
+  border-radius: 8px;
+  padding: 60px 20px;
+  text-align: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  color: #666;
+  font-size: 18px;
+}
+
+.orders-list {
+  display: grid;
+  gap: 20px;
+}
+
+.order-card {
+  background: white;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-left: 4px solid #007bff;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.order-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.order-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid #eee;
+}
+
+.order-header h3 {
+  font-size: 18px;
+  color: #222;
+  margin: 0;
+}
+
+.order-status {
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.order-status.pending {
+  background-color: #fff3cd;
+  color: #856404;
+}
+
+.order-status.completed {
+  background-color: #d4edda;
+  color: #155724;
+}
+
+.order-status.shipped {
+  background-color: #d1ecf1;
+  color: #0c5460;
+}
+
+.order-details {
+  margin-bottom: 15px;
+  font-size: 14px;
+  color: #666;
+}
+
+.order-details p {
+  margin-bottom: 8px;
+}
+
+.order-details strong {
+  color: #222;
+}
+
+.order-items {
+  background-color: #f9f9f9;
+  padding: 15px;
+  border-radius: 4px;
+  margin-top: 15px;
+}
+
+.order-items h4 {
+  font-size: 14px;
+  margin-bottom: 10px;
+  color: #222;
+}
+
+.order-items ul {
+  list-style: none;
+}
+
+.order-items li {
+  font-size: 13px;
+  color: #666;
+  padding: 5px 0;
+}
+
+@media (max-width: 768px) {
+  .order-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .order-status {
+    margin-top: 10px;
+  }
+}
